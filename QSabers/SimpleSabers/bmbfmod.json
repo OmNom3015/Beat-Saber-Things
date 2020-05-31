@@ -1,0 +1,59 @@
+{
+    "coverImageFilename": "cover.png",
+    "icon": "cover.png",
+    "components": [
+        {
+            "type": "FileCopyMod",
+            "sourceFileName": "Simple Sabers.qsaber",
+            "targetRootedPathAndFileName": "/sdcard/Android/data/com.beatgames.beatsaber/files/sabers/testSaber.qsaber"
+        },
+		{
+			"Type": "AssetsMod",
+			"InstallAction": {
+			"PreloadFiles": [
+          "{{Trail}}"
+        ],
+        "Actions": [
+          {
+            "Type": "ReplaceAsset",
+            "FromDataFile": "FullTrail.dat",
+            "Locator": {
+              "TypeIs": "Texture2D",
+              "NameIs": "FullTrail"
+            },
+            "AllowOverwriteName": false,
+            "StepNumber": 1
+          }
+        ]
+      },
+      "UninstallAction": {
+        "PreloadFiles": [
+          "{{Saber}}"
+        ],
+        "Actions": [
+          {
+            "Type": "RestoreAsset",
+            "Locator": {
+              "TypeIs": "Texture2D",
+              "NameIs": "FullTrail"
+            },
+            "StepNumber": 1
+          }
+        ]
+      }
+    }
+    ],
+    "version": "1.0.0",
+    "links": {
+        "pageLink": ""
+    },
+    "description": [
+        "Really Simple Sabers"
+    ],
+    "gameVersion": "1.9.0",
+    "platform": "Quest",
+    "id": "omnomsimplesabers",
+    "name": "Simple Sabers",
+    "author": "om.nom",
+    "category": "Saber"
+}

@@ -1,0 +1,59 @@
+{
+    "coverImageFilename": "cover.png",
+    "icon": "cover.png",
+    "components": [
+        {
+            "type": "FileCopyMod",
+            "sourceFileName": "Sakura Sabers Pro.qsaber",
+            "targetRootedPathAndFileName": "/sdcard/Android/data/com.beatgames.beatsaber/files/sabers/testSaber.qsaber"
+        },
+		{
+			"Type": "AssetsMod",
+			"InstallAction": {
+			"PreloadFiles": [
+          "{{Trail}}"
+        ],
+        "Actions": [
+          {
+            "Type": "ReplaceAsset",
+            "FromDataFile": "FullTrail.dat",
+            "Locator": {
+              "TypeIs": "Texture2D",
+              "NameIs": "FullTrail"
+            },
+            "AllowOverwriteName": false,
+            "StepNumber": 1
+          }
+        ]
+      },
+      "UninstallAction": {
+        "PreloadFiles": [
+          "{{Saber}}"
+        ],
+        "Actions": [
+          {
+            "Type": "RestoreAsset",
+            "Locator": {
+              "TypeIs": "Texture2D",
+              "NameIs": "FullTrail"
+            },
+            "StepNumber": 1
+          }
+        ]
+      }
+    }
+    ],
+    "version": "1.0.0",
+    "links": {
+        "pageLink": ""
+    },
+    "description": [
+        "I ported the Sakura Sabers Pro as an QSaber now :D"
+    ],
+    "gameVersion": "1.10.0",
+    "platform": "Quest",
+    "id": "sakuraqsaberom.nom",
+    "name": "Sakura Sabers Pro",
+    "author": "Model Made by LepLop Ported by Om.Nom",
+    "category": "Saber"
+}

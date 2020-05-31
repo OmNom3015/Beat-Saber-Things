@@ -1,0 +1,24 @@
+{
+    "coverImageFilename": "cover.png",
+    "icon": "cover.png",
+    "components": [
+        {
+            "type": "FileCopyMod",
+            "sourceFileName": "VeryDefaultsaber.qsaber",
+            "targetRootedPathAndFileName": "/sdcard/Android/data/com.beatgames.beatsaber/files/sabers/testSaber.qsaber"
+        }
+    ],
+    "version": "2.0.0",
+    "links": {
+        "pageLink": ""
+    },
+    "description": [
+        "Might be Broken"
+    ],
+    "gameVersion": "1.9.0",
+    "platform": "Quest",
+    "id": "VeryDefaultsaberOm.NomV2.0.0",
+    "name": "VeryDefaultsaber",
+    "author": "Om.Nom",
+    "category": "Saber"
+}

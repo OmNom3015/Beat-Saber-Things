@@ -1,0 +1,59 @@
+{
+    "coverImageFilename": "cover.png",
+    "icon": "cover.png",
+    "components": [
+        {
+            "type": "FileCopyMod",
+            "sourceFileName": "SpaceOpera.qsaber",
+            "targetRootedPathAndFileName": "/sdcard/Android/data/com.beatgames.beatsaber/files/sabers/testSaber.qsaber"
+        },
+		{
+			"Type": "AssetsMod",
+			"InstallAction": {
+			"PreloadFiles": [
+          "{{Trail}}"
+        ],
+        "Actions": [
+          {
+            "Type": "ReplaceAsset",
+            "FromDataFile": "FullTrail.dat",
+            "Locator": {
+              "TypeIs": "Texture2D",
+              "NameIs": "FullTrail"
+            },
+            "AllowOverwriteName": false,
+            "StepNumber": 1
+          }
+        ]
+      },
+      "UninstallAction": {
+        "PreloadFiles": [
+          "{{Saber}}"
+        ],
+        "Actions": [
+          {
+            "Type": "RestoreAsset",
+            "Locator": {
+              "TypeIs": "Texture2D",
+              "NameIs": "FullTrail"
+            },
+            "StepNumber": 1
+          }
+        ]
+      }
+    }
+    ],
+    "version": "1.0.0",
+    "links": {
+        "pageLink": ""
+    },
+    "description": [
+        "Space Opera Sabers for Quest With Trails"
+    ],
+    "gameVersion": "1.10.0",
+    "platform": "Quest",
+    "id": "spaceoperaomnom",
+    "name": "SpaceOpera",
+    "author": "Om.Nom#3015",
+    "category": "Saber"
+}
